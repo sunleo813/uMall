@@ -86,3 +86,11 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+.myTabStyle{
+   .tab-button[aria-selected=true] {
+    color: #ffbf00;
+    padding: 0;
+}
+}
