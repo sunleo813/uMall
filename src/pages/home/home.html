@@ -4,14 +4,39 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <ion-slides pager class="slideStyle" loop="true" autoplay=3000>
+
+    <ion-slide>
+      <img src="assets/imgs/01.jpg" />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/02.jpg" />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/03.jpg" />
+    </ion-slide>
+
+  </ion-slides>
+
+  <div class="pushStyle">Product Push</div>
+
+  <div class="slide_product">
+    <!-- <ion-scroll  scrollX="true" [ngStyle]="{'width':picListWidth}"> 
+      
+    </ion-scroll> -->
+    <ion-scroll scrollX="true" [ngStyle]="{'width': picListWidth}">
+        <ul class="clearfix">
+            <li *ngFor='let item of picList'>
+              <img src="{{item.picName}}" />
+              <p> {{item.title}}</p>
+            </li>
+          </ul>
+    </ion-scroll>
+  </div>
+  <div class="pushStyle">
+    Guess you likes
+  </div>
 </ion-content>

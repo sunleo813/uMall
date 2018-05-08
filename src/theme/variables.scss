@@ -88,9 +88,18 @@ $colors: (
 @import "noto-sans";
 
 
-.myTabStyle{
-   .tab-button[aria-selected=true] {
-    color: #ffbf00;
-    padding: 0;
+
+.myTabStyle .tab-button[aria-selected=true] .tab-button-icon{
+  color: #ffa500 !important;
 }
+
+.myTabStyle .tab-button:hover:not(.disable-hover), .tatabstyle .tab-button[aria-selected=true]{
+  color: #ffa500 !important;
+}
+
+.clearfix:after{
+  content:"";
+  display: block;
+  height: 0px;
+  clear: both;
 }
