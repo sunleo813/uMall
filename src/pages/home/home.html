@@ -8,15 +8,15 @@
   <ion-slides pager class="slideStyle" loop="true" autoplay=3000>
 
     <ion-slide>
-      <img src="assets/imgs/01.jpg" />
+      <img src="assets/imgs/slide01.jpg" />
     </ion-slide>
 
     <ion-slide>
-      <img src="assets/imgs/02.jpg" />
+      <img src="assets/imgs/slide02.jpg" />
     </ion-slide>
 
     <ion-slide>
-      <img src="assets/imgs/03.jpg" />
+      <img src="assets/imgs/slide03.png" />
     </ion-slide>
 
   </ion-slides>
@@ -38,5 +38,14 @@
   </div>
   <div class="pushStyle">
     Guess you likes
+  </div>
+  <div class="guess_product">
+    <ion-row>
+      <ion-col col-6 *ngFor="let item of picList">
+        <img src="{{item.picName}}"/>
+        <p>{{item.title}}</p>
+        
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>
