@@ -8,15 +8,15 @@
   <ion-slides pager class="slideStyle" loop="true" autoplay=3000>
 
     <ion-slide>
-      <img src="assets/imgs/slide01.jpg" />
+      <img src="assets/imgs/slide01.png" />
     </ion-slide>
 
     <ion-slide>
-      <img src="assets/imgs/slide02.jpg" />
+      <img src="assets/imgs/slide02.png" />
     </ion-slide>
 
     <ion-slide>
-      <img src="assets/imgs/slide03.png" />
+      <img src="assets/imgs/slide03.jpg" />
     </ion-slide>
 
   </ion-slides>
@@ -24,27 +24,28 @@
   <div class="pushStyle">Product Push</div>
 
   <div class="slide_product">
-    <!-- <ion-scroll  scrollX="true" [ngStyle]="{'width':picListWidth}"> 
-      
-    </ion-scroll> -->
+
     <ion-scroll scrollX="true" [ngStyle]="{'width': picListWidth}">
-        <ul class="clearfix">
-            <li *ngFor='let item of picList'>
-              <img src="{{item.picName}}" />
-              <p> {{item.title}}</p>
-            </li>
-          </ul>
+
+      <ul class="clearfix">
+        <li *ngFor='let item of pushList'>
+          <img src="{{item.picName}}" />
+          <p> {{item.title}}</p>
+        </li>
+      </ul>
+
     </ion-scroll>
   </div>
+  
   <div class="pushStyle">
     Guess you likes
   </div>
   <div class="guess_product">
     <ion-row>
       <ion-col col-6 *ngFor="let item of picList">
-        <img src="{{item.picName}}"/>
+        <img src="{{item.picName}}" />
         <p>{{item.title}}</p>
-        
+
       </ion-col>
     </ion-row>
   </div>

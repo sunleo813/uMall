@@ -9,10 +9,26 @@
 <ion-content>
 <div class="cate_content">
   <div class="cate_left">
-    left
+    <ion-list >
+      <ion-item *ngFor="let item of cateList">
+        {{item}}
+      </ion-item>
+    </ion-list>
   </div>
+
   <div class="cate_right">
-    right
+    <ion-row>
+      <ion-col col-4 *ngFor="let item of picList" >
+        <img src="{{item.picName}}"/>
+        <p>{{item.title}} </p>      
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-4 *ngFor="let item of picList" >
+          <img src="{{item.picName}}"/>
+          <p>{{item.title}} </p>      
+        </ion-col>
+      </ion-row>
   </div>
 
 </div>

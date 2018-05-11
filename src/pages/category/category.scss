@@ -7,13 +7,17 @@
     .cate_left{
         width: 100px;
         height: 100%;
-        background: red;
+        overflow-y: auto;
+       
+        
+       
     }
 
     .cate_right{
         height: 100%;
-        background: blue ;
+        background: lightgray;
         flex: 1;
+        overflow-y: auto;
     }
 
 }

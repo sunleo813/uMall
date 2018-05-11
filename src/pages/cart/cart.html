@@ -7,11 +7,75 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+  <dl class="cart_list">
+    <dt>
+
+      <ion-checkbox color="danger"></ion-checkbox>
+      <img src="assets/imgs/00.jpg">
+
+    </dt>
+    <dd>
+      <h2 class="cart_title">
+        This girl can buy with Chinese RMB 1000 per night. 
+      </h2>
+      <div class="cart_product_info">
+        <div class="cart_price">
+            $800 
+        </div>
+       
+      
+        <div class="cart_num">
+          <div class="input_left">-</div>
+          <div class="input_center">
+            <input type="text" readonly="readonly" value="1" name="num" id="num">
+          </div>
+          <div class="input_right">+</div>
+        </div>
+      </div>
+    </dd>
+  </dl>
+
+  <dl class="cart_list">
+      <dt>
+  
+        <ion-checkbox color="danger"></ion-checkbox>
+        <img src="assets/imgs/03.jpg">
+  
+      </dt>
+      <dd>
+        <h2 class="cart_title">
+          This girl can only join in KTV. NO EXTRA service provide.
+        </h2>
+        <div class="cart_product_info">
+          <div class="cart_price">
+              $300
+          </div>
+         
+        
+          <div class="cart_num">
+            <div class="input_left">-</div>
+            <div class="input_center">
+              <input type="text" readonly="readonly" value="1" name="num" id="num">
+            </div>
+            <div class="input_right">+</div>
+          </div>
+        </div>
+      </dd>
+    </dl>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar >
+      <div class="footer_left">
+
+          <ion-checkbox color="danger" ></ion-checkbox>
+          Select All        <strong>Total:</strong>
+    
+        </div>
+      <ion-buttons end>
+        <button ion-button color="danger" >Go Pay</button>
+        
+      </ion-buttons>
+    
+  </ion-toolbar>
+ </ion-footer>
