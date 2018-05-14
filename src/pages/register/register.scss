@@ -1,0 +1,28 @@
+.reg_btn{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.register_page{
+
+    border:1px solid #eee;
+    height: 5rem;
+    display: flex;
+    margin: 0.5rem;
+    font-size: 2.5rem;
+    padding: 1rem 0.5rem;
+
+    .country_code{
+        
+        text-indent: 0.5rem;
+        width:  8rem ;
+        text-align: center;
+        
+    }
+
+    .phone_no{
+        flex: 1;
+        text-align: center;
+    }
+}
