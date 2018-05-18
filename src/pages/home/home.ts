@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SearchPage } from '../search/search';
 
 @Component({
   selector: 'page-home',
@@ -28,4 +29,7 @@ export class HomePage {
     this.picListWidth=this.picList.length*95+'px';
   }
 
+  goSearchPage(){
+    this.navCtrl.push(SearchPage);
+  }
 }

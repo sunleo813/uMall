@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { RegisterpasswordPage } from '../registerpassword/registerpassword';
 
 /**
  * Generated class for the RegistersignPage page.
@@ -22,4 +23,9 @@ export class RegistersignPage {
     console.log('ionViewDidLoad RegistersignPage');
   }
 
+  goRegisterpasswordPage(){
+    this.navCtrl.push(RegisterpasswordPage);
+  }
+
 }
+

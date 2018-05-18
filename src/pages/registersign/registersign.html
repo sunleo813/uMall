@@ -7,12 +7,19 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>registersign</ion-title>
+    <ion-title>Phone Rapid Register</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content >
+  <h2> Verify your phone to activate your account</h2>
+  <div class="sign_page">
 
+    <input type="text" value="" placeholder="verify code">
+    <div class="timer"> Resend (60)</div>
+  </div>
+
+  <button class="reg_btn" ion-button block color='danger' (click)="goRegisterpasswordPage()">OK</button>
 </ion-content>

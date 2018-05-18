@@ -16,13 +16,30 @@
     .country_code{
         
         text-indent: 0.5rem;
-        width:  8rem ;
-        text-align: center;
+        width:  10rem ;
+       
         
+        input{
+
+            width: 9rem;
+            text-align: center;
+            border: 1px solid #666;
+            
+            
+        }
     }
 
     .phone_no{
-        flex: 1;
-        text-align: center;
+       
+        width:22rem;
+        
+        input{
+            width:23rem;
+            text-align: center;
+            border:1px solid #666;
+            margin-left: 1rem;
+            
+            
+        }
     }
 }
